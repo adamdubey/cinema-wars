@@ -8,9 +8,19 @@ Can't decide on which movie to watch? Let the data compare two different movies 
 
 ## Overview
 
->NOTE: You will need to signup for a free API key from OMDB!
 
-To use the application, just open `index.html` in your web browser of choice and search for a movie!
+To use the application, you will need to obtain a free API key from OMDB first.
+
+Once you have this key, update `index.js` in the two areas in that require the `apiKey` parameter:
+
+```js
+params: {
+      apikey: "xxxxxxx",
+      i: movie.imdbID,
+    },
+```
+
+Then just open `index.html` in your web browser of choice and search for a movie!
 
 ---
 
